@@ -5,7 +5,7 @@ root = Tk()
 
 root.title('Image viewer')
 # root.iconbitmap("@potato.xbm")
-my_img = ImageTk.PhotoImage(Image.open("potato.jpg"))
+my_img = ImageTk.PhotoImage(Image.open("images/potato.jpg"))
 
 my_label = Label(image=my_img)
 
