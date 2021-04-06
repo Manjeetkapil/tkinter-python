@@ -9,7 +9,6 @@ root = Tk()
 root.title('Image viewer')
 # root.iconbitmap("@potato.xbm")
 response = requests.get("https://source.unsplash.com/1100x600/?tech,laptop,nature")
-print(response)
 
 file = open("sam.jpeg", "wb")
 file.write(response.content)
@@ -31,19 +30,21 @@ async def get():
 	# return response
 
 def nex():
-	print('hi')
+	global root
+	root.quit() #only works with root.quit() perfectly and can work not so good with root.withdraw()
+	# root = Tk()
+	# root.title('Image viewer')
 	loop = asyncio.get_event_loop()
 	loop.run_until_complete(get())
-	# print(response)
-	print('hh')
 	k_img = ImageTk.PhotoImage(Image.open("sam.jpeg"))
-	global my_label
-	my_label.grid_forget()
 	my_label = Label(image=k_img)
 	my_label.grid(row=0,column=0)
-	# my_label.grid(row=0,column=0)
+	print('noooooo\n')
+	# root.deiconify() if you want to use root.withdraw()
+	root.mainloop()
+	# root.destroy()
 
-button_quit = Button(root,text="Exit", command=root.quit)
+button_quit = Button(root,text="Exit", command=root.destroy)
 button_quit.grid(row=1,column=0)
 button_next = Button(root,text="Next",command=nex)
 button_next.grid(row=1,column=1)
