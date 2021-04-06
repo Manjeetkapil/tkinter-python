@@ -10,7 +10,9 @@
 * [RandomImage](https://github.com/Manjeetkapil/tkinter-python/blob/main/image.py)
 	This loads a new random image using api of unsplash when you click next.
 	To run: `python3 image.py`
+	![RandomImage](https://github.com/Manjeetkapil/tkinter-python/blob/main/gif/random.gif)
 
 * [ImageViewer](https://github.com/Manjeetkapil/tkinter-python/blob/main/Imageviewer.py)
 	This is simple image viewer which works in the image directory of this repo where you can put images and can view images also scroll them.
 	To run: `python3 Imageviewer.py`
+	![ImageViewer](https://github.com/Manjeetkapil/tkinter-python/blob/main/gif/iviewer.gif)
