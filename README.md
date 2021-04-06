@@ -5,6 +5,7 @@
 * [Calculator](https://github.com/Manjeetkapil/tkinter-python/blob/main/calculator.py)
 	In this calculator you can do simple arthimetic operations like addition,subtraction,multiplication,divide.
 	To run: `python3 calculator.py`
+	![Alt Text](https://github.com/Manjeetkapil/tkinter-python/blob/main/gif/cal.gif)
 
 * [RandomImage](https://github.com/Manjeetkapil/tkinter-python/blob/main/image.py)
 	This loads a new random image using api of unsplash when you click next.
